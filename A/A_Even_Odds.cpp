@@ -2,25 +2,15 @@
 using namespace std;
 int main()
 {
-
-    int n, p;
-    cin >> n >> p;
-    int c=1;
-    int j=0 , z=1;
-    int temp[n] , tempp[n];
-    for (int i = 1; i <= n; i++)
+    long long n, k;
+    cin >> n >> k;
+    if (k <= (n + 1) / 2)
     {
-        if(c % 2 !=0)
-        {temp[j] = c++;j++;}
-        else
-        {tempp[z] =c++; z++;}
-
+        cout << k * 2 - 1 << endl;
     }
-    if(n%2==0&& p== n/2)
-        cout <<(n-1);
-    else if(p<j)
-        cout << temp[p-1];
     else
-        cout <<tempp[p-j];
+    {
+        cout << (k - (n + 1) / 2) * 2 << endl;
+    }
     return 0;
 }
