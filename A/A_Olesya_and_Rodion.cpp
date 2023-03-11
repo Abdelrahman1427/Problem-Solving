@@ -9,7 +9,8 @@ int main()
     for (int i = 0; i < n; i++)
     {
 
-        random = c + (rand() % (c + 1));
+        // random = c + (rand() % (c + 1));
+        
         while (i == n - 1 && random % t != 0)
         {
             random = c + (rand() % (c + 1));
